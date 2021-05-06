@@ -2,7 +2,7 @@
   <img src="https://wallpaperscave.com/images/original/18/04-25/anime-one-punch-man-44886.jpg">
 </p>
 
-# Saitama Robot
+# Eren Robot
 
 <p align="center">
 - x -|│  For freedom we must fight! ”  │| - x -
@@ -40,7 +40,7 @@
 
 
 
-Saitama is a simple one-punch solution to your group management needs and has become one of the most prominently kanged bots around telegram, purely weeab themed.
+Eren is a simple bot for making your group management awesome.
 
 * Bot Link:  <a href="https://t.me/SaitamaRobot" alt="Saitama Robot"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-SaitamaRobot-blue" /> </a>
 * News channel: <a  href="https://t.me/OnePunchUpdates" alt="One Punch Updates"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-One%20Punch%20Updates-9cf" /> </a>
