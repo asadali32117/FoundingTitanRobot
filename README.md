@@ -18,3 +18,6 @@ Eren is a simple bot for making your group management easy and awesome.
 
 ## Credits 📍
 * Goes to sawada aka saitama bot creater
+
+## deploy 
+https://heroku.com/deploy?template=https://github.com/sasukeuchiha912/ErenJaegerRobot
