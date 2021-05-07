@@ -13,8 +13,8 @@
 
 Eren is a simple bot for making your group management easy and awesome.
 
-* Bot Link:  <a href=". " alt="Eren Robot"> <img src="https://img.shields.io/badge/-ErenRobot-blue" /> </a>
-* News channel: <a  href="https://t.me/OnePunchUpdates" alt="One Punch Updates"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-One%20Pu
+* Bot Link:  <a href="http://t.me/FoundingTitanRobot" alt="FoundingtitanRobot"> <img src="https://img.shields.io/badge/-ErenRobot-blue" /> </a>
+* News channel: <a  href="https://t.me/foundingtitanupdates/" alt="foundingtitanupdates"> <img  src="https://img.shields.io/badge/-Update%20channel-lightgrey" /> </a>
 
 ## Credits 📍
 * Goes to sawada aka saitama bot creater
