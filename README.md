@@ -5,13 +5,13 @@
 # FoundingTitanRobot
 
 <p align="center">
-- x -|│ "For freedom we must fight and keep moving forward”  │| - x -
+ "The bot is based on Attack on Titan Anime ”  
 </p>
 
 
 
 
-Eren is a simple bot for making your group management easy and awesome.
+Eren is a simple bot for making your group management easier and cool.
 
 * Bot Link:  <a href="http://t.me/FoundingTitanRobot" alt="FoundingtitanRobot"> <img src="https://img.shields.io/badge/-FoundingTitanRobot-red" /> </a>
 * Update Channel: <a  href="https://t.me/foundingtitanupdates/" alt="foundingtitanupdates"> <img src="https://img.shields.io/badge/-Update%20channel-lightgrey" /> </a>
