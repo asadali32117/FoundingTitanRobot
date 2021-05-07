@@ -5,7 +5,7 @@
 # Eren Robot
 
 <p align="center">
-- x -|│ "For freedom we must fight! ”  │| - x -
+- x -|│ "For freedom we must fight and keep moving forward”  │| - x -
 </p>
 
 
@@ -20,4 +20,4 @@ Eren is a simple bot for making your group management easy and awesome.
 * Goes to sawada aka saitama bot creater
 
 ## deploy 
-https://heroku.com/deploy?template=https://github.com/sasukeuchiha912/ErenJeagerRobot
+https://heroku.com/deploy?template=https://github.com/sasukeuchiha912/FoundingTitanRobot
