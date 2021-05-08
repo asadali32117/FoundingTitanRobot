@@ -78,7 +78,7 @@ Built by weebs for weebs, I specialize in managing anime eccentric communities,D
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
+I'm a Titan-Shifting Group Management Bot and help admins manage their groups with My Titan Powers! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
