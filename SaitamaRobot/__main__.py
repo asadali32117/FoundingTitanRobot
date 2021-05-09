@@ -99,10 +99,7 @@ And the following:
 
 SAITAMA_IMG = "https://telegra.ph/file/b3b43c1bb823788fe2c1a.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+DONATE_STRING = """Nah, No Need To Donate 😉."""
 
 IMPORTED = {}
 MIGRATEABLE = []
