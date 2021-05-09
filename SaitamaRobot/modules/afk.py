@@ -66,7 +66,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
                 "{} Is wasting his time in the chat!",
                 "The Dead {} Came Back From His Grave!",
                 "We thought we lost you {}",
-                "Welcome Back {}\n now pay $100 to Get freedom or get banned!",
+                "Welcome Back {} now pay $100 to Get freedom or get banned!",
                 "{} Good job waking up now get ready for your classes!",
                 "Hey,{}! Why weren't you online for such a long time?",
                 "{} why did you came back?",
