@@ -63,14 +63,16 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "Wow! {}?\nIs Wasting Time In The Chat!",
-                "Wow! The Dead {}?\nCame Back From His Grave!",
+                "{}\nIs wasting his time in the chat!",
+                "The Dead {}\nCame Back From His Grave!",
                 "{} Why Did You Came Here Again?",
-                "Welcome Back, {}?\nNow Pay $100 To Get Freedom Or Get Banned!",
-                "{} Good Job Waking Up Now Get Ready For Your Classes!",
-                "Hey, You! Yes, You, {}?\n! Why Weren't You Online For Such A Long Time?",
-                "Hmm Why Did You Came Back, {}?\nAre You Feeling Horny?",
-                "Why Did You Came Back, {}?\nNothing Has Changed Your Still Useless!",
+                "Welcome Back, {}\nnow pay $100 to Get freedom or get banned!",
+                "{} Good job waking up now get ready for your classes!",
+                "Hey,{}\n! Why weren't you online for such a long time?",
+                "{} why did you came back?",
+                "Ah shit, here we go again",
+                "Oh no! not you again",
+                "Welcome back to hell {}",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(
