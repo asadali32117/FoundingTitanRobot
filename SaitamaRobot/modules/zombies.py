@@ -1,3 +1,4 @@
+
 import asyncio
 from asyncio import sleep
 
@@ -110,4 +111,4 @@ async def zombies(event):
         del_status = f"Cleaned `{del_u}` Zombies \
         \n`{del_a}` Zombie Admin Accounts Are Not Removed!"
 
-    await cleaning_zombies.edit(del_status
+    await cleaning_zombies.edit(del_status)
