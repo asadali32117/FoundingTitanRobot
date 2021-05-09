@@ -560,7 +560,7 @@ Group admins/group owners do not need these commands.
  ╠ `/demons`*:* Lists all Demon disasters
  ╠ `/tigers`*:* Lists all Tigers disasters
  ╠ `/wolves`*:* Lists all Wolf disasters
- ╠ `/heroes`*:* Lists all Hero Association members
+ ╠ `/ackermans`*:* Lists all Hero Association members
  ╠ `/adddragon`*:* Adds a user to Dragon
  ╠ `/adddemon`*:* Adds a user to Demon
  ╠ `/addtiger`*:* Adds a user to Tiger
