@@ -460,7 +460,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 @run_async
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Wolf Disasters 🐺:</b>\n"
+    reply = "<b>Known Garrison Disasters:</b>\n"
     m = update.effective_message.reply_text(
         "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML,
     )
@@ -479,7 +479,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 @run_async
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Tiger Disasters 🐯:</b>\n"
+    reply = "<b>Known Scout Disasters🔰:</b>\n"
     m = update.effective_message.reply_text(
         "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML,
     )
@@ -501,7 +501,7 @@ def supportlist(update: Update, context: CallbackContext):
     m = update.effective_message.reply_text(
         "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML,
     )
-    reply = "<b>Known Demon Disasters 👹:</b>\n"
+    reply = "<b>Known Royal Blood Disasters:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -520,7 +520,7 @@ def sudolist(update: Update, context: CallbackContext):
         "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML,
     )
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Known Dragon Disasters 🐉:</b>\n"
+    reply = "<b>Known Titan Shifters:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -539,7 +539,7 @@ def devlist(update: Update, context: CallbackContext):
         "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML,
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Hero Association Members ⚡️:</b>\n"
+    reply = "<b>Ackerman Clan Members⚡️:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -560,7 +560,7 @@ Group admins/group owners do not need these commands.
  ╠ `/demons`*:* Lists all Demon disasters
  ╠ `/tigers`*:* Lists all Tigers disasters
  ╠ `/wolves`*:* Lists all Wolf disasters
- ╠ `/ackermans`*:* Lists all Hero Association members
+ ╠ `/heroes`*:* Lists all Hero Association members
  ╠ `/adddragon`*:* Adds a user to Dragon
  ╠ `/adddemon`*:* Adds a user to Demon
  ╠ `/addtiger`*:* Adds a user to Tiger
