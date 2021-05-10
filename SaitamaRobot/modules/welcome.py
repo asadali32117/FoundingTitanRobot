@@ -199,7 +199,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Stay On High Alert! I Repeat,Stay On High Alert! The Founding Titan Came Here!", reply_to_message_id=reply,
+                    "Founding Titan Just Joined the group!", reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -211,7 +211,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "WOW! A member of the The Ackerman Clan just joined!",
+                    "Be Cool! A member of the The Ackerman Clan just joined!",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -237,7 +237,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "Someone from the Royal Family just joined! Show Your Manners!",
+                    "Someone with Royal Blood has joined the group! stay alert!",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -250,7 +250,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_text(
-                    "A Scout from the Scout Regiment just joined!", reply_to_message_id=reply,
+                    "Shinzou Sasageyo! A Scout Just joined", reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -566,14 +566,14 @@ def left_member(update: Update, context: CallbackContext):
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Oi! Genos! He left..", reply_to_message_id=reply,
+                    "Oi! Armin! He left..", reply_to_message_id=reply,
                 )
                 return
 
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you later at the Hero's Association!",
+                    "See you later at the Ackerman Clan Meetings!",
                     reply_to_message_id=reply,
                 )
                 return
