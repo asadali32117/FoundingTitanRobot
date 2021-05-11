@@ -6,7 +6,7 @@ from SaitamaRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
-# Wallpapers module by @TheRealPhoenix using wall.alphacoders.com
+# Wallpaper module powered by wall.alphacoders.com
 
 
 @run_async
