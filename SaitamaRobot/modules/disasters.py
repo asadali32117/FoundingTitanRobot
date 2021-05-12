@@ -648,7 +648,7 @@ TIGER_HANDLER = CommandHandler(("addscout"), addtiger)
 WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addgarrisom"), addwhitelist)
 UNSUDO_HANDLER = CommandHandler(("removesudo", "removetitanshifter"), removesudo)
 UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removeroyalblood"), removesupport)
-UNTIGER_HANDLER = CommandHandler(("removescout"), removescout)
+UNTIGER_HANDLER = CommandHandler(("removetiger"), removescout)
 UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removegarrison"), removewhitelist)
 
 WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "garrisons"], whitelistlist)
