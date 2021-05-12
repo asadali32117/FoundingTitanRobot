@@ -556,15 +556,15 @@ Commands listed here only work for users with special access and are mainly used
 Group admins/group owners do not need these commands.
 
  ╔ *List all special users:*
- ╠ `/titanshifters`*:* Lists all Dragon disasters
- ╠ `/royalbloods`*:* Lists all Demon disasters
- ╠ `/scouts`*:* Lists all Tigers disasters
- ╠ `/garrisons`*:* Lists all Wolf disasters
- ╠ `/ackermans`*:* Lists all Hero Association members
- ╠ `/addtitanshifter`*:* Adds a user to Dragon
- ╠ `/addroyalblood`*:* Adds a user to Demon
- ╠ `/addscout`*:* Adds a user to Tiger
- ╠ `/addgarrison`*:* Adds a user to Wolf
+ ╠ `/titanshifters`*:* Lists all Titan Shifters
+ ╠ `/royalbloods`*:* Lists all Royal Bloods
+ ╠ `/scouts`*:* Lists all Scouts
+ ╠ `/garrisons`*:* Lists all Garrisons
+ ╠ `/ackermans`*:* Lists all Ackerman Clan members
+ ╠ `/addtitanshifter`*:* Adds a user to Titan Shifter
+ ╠ `/addroyalblood`*:* Adds a user to Royal Blood
+ ╠ `/addscout`*:* Adds a user to Scout Regiment
+ ╠ `/addgarrison`*:* Adds a user to Garrison Regiment
  ╚ `Add dev doesnt exist, devs should know how to add themselves`
 
  ╔ *Ping:*
