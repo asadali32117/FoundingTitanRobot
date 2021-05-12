@@ -276,7 +276,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
     )
 
     log_message = (
-        f"#TIGER\n"
+        f"#SCOUT\n"
         f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))} \n"
         f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
     )
@@ -437,13 +437,13 @@ def removetiger(update: Update, context: CallbackContext) -> str:
     if user_id in TIGERS:
         message.reply_text("Demoting to normal user")
         TIGERS.remove(user_id)
-        data["tigers"].remove(user_id)
+        data["Tigers"].remove(user_id)
 
         with open(ELEVATED_USERS_FILE, "w") as outfile:
             json.dump(data, outfile, indent=4)
 
         log_message = (
-            f"#UNTIGER\n"
+            f"#UNSCOUT\n"
             f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
         )
