@@ -556,15 +556,15 @@ Commands listed here only work for users with special access and are mainly used
 Group admins/group owners do not need these commands.
 
  ╔ *List all special users:*
- ╠ `/dragons`*:* Lists all Dragon disasters
- ╠ `/demons`*:* Lists all Demon disasters
- ╠ `/tigers`*:* Lists all Tigers disasters
- ╠ `/wolves`*:* Lists all Wolf disasters
- ╠ `/heroes`*:* Lists all Hero Association members
- ╠ `/adddragon`*:* Adds a user to Dragon
- ╠ `/adddemon`*:* Adds a user to Demon
- ╠ `/addtiger`*:* Adds a user to Tiger
- ╠ `/addwolf`*:* Adds a user to Wolf
+ ╠ `/titanshifters`*:* Lists all Dragon disasters
+ ╠ `/royalbloods`*:* Lists all Demon disasters
+ ╠ `/scouts`*:* Lists all Tigers disasters
+ ╠ `/garrisons`*:* Lists all Wolf disasters
+ ╠ `/ackermans`*:* Lists all Hero Association members
+ ╠ `/addtitanshifter`*:* Adds a user to Dragon
+ ╠ `/addroyalblood`*:* Adds a user to Demon
+ ╠ `/addscout`*:* Adds a user to Tiger
+ ╠ `/addgarrison`*:* Adds a user to Wolf
  ╚ `Add dev doesnt exist, devs should know how to add themselves`
 
  ╔ *Ping:*
@@ -642,20 +642,20 @@ Group admins/group owners do not need these commands.
 Visit @{SUPPORT_CHAT} for more information.
 """
 
-SUDO_HANDLER = CommandHandler(("addsudo", "adddragon"), addsudo)
-SUPPORT_HANDLER = CommandHandler(("addsupport", "adddemon"), addsupport)
-TIGER_HANDLER = CommandHandler(("addtiger"), addtiger)
-WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addwolf"), addwhitelist)
-UNSUDO_HANDLER = CommandHandler(("removesudo", "removedragon"), removesudo)
-UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removedemon"), removesupport)
+SUDO_HANDLER = CommandHandler(("addsudo", "addtitanshifter"), addsudo)
+SUPPORT_HANDLER = CommandHandler(("addsupport", "addroyalblood"), addsupport)
+TIGER_HANDLER = CommandHandler(("addscout"), addtiger)
+WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addgarrisom"), addwhitelist)
+UNSUDO_HANDLER = CommandHandler(("removesudo", "removetitanshifter"), removesudo)
+UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removeroyalblood"), removesupport)
 UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger)
 UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removewolf"), removewhitelist)
 
-WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist)
-TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons"], supportlist)
-SUDOLIST_HANDLER = CommandHandler(["sudolist", "dragons"], sudolist)
-DEVLIST_HANDLER = CommandHandler(["devlist", "heroes"], devlist)
+WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "garrisons"], whitelistlist)
+TIGERLIST_HANDLER = CommandHandler(["scouts"], tigerlist)
+SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "royalbloods"], supportlist)
+SUDOLIST_HANDLER = CommandHandler(["sudolist", "titanshifters"], sudolist)
+DEVLIST_HANDLER = CommandHandler(["devlist", "ackermans"], devlist)
 
 dispatcher.add_handler(SUDO_HANDLER)
 dispatcher.add_handler(SUPPORT_HANDLER)
