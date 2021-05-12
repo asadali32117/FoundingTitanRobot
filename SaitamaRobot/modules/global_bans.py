@@ -91,7 +91,7 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "That user is member of the Ackerman Clan\nI can't act against our own.",
+            "That user is member of the Ackerman Clan I can't act against our own.",
         )
         return
 
