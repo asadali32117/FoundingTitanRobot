@@ -77,12 +77,12 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested Ackermans to promote a Royal Blood to Titan Shifter."
+        rt += "Requested the Ackermans to promote a Royal Blood to Titan Shifter."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested Ackermans to promote a Garrison to Titan Shifter."
+        rt += "Requested the Ackermans to promote a Garrison to Titan Shifter."
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -135,7 +135,7 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested Ackermans to demote this Titan Shifter to Eoyal Blood"
+        rt += "Requested the Ackermans to demote this Titan Shifter to Royal Blood"
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
@@ -144,7 +144,7 @@ def addsupport(
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested Ackermans to promote this Garrisom to Royal Blood"
+        rt += "Requested the Ackermans to promote this Garrison to Royal Blood"
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -196,7 +196,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Royal Blood, Demoting to Garrisom."
+        rt += "This user is already a Royal Blood, Demoting to Garrison."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
@@ -307,7 +307,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("Requested HA to demote this user to Civilian")
+        message.reply_text("Requested the Ackermans to demote this user to Civilian")
         DRAGONS.remove(user_id)
         data["sudos"].remove(user_id)
 
@@ -326,7 +326,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Dragon Disaster!")
+        message.reply_text("This user is not a Titan Shifter!")
         return ""
 
 
@@ -350,7 +350,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DEMONS:
-        message.reply_text("Requested Ackermans to demote this user to Civilian")
+        message.reply_text("Requested the Ackermans to demote this user to Civilian")
         DEMONS.remove(user_id)
         data["supports"].remove(user_id)
 
@@ -369,7 +369,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Titan Shifter!")
+        message.reply_text("This user is not a Royal Blood!")
         return ""
 
 
