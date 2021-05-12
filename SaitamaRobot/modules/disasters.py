@@ -155,7 +155,7 @@ def addsupport(
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\n{user_member.first_name} was added as a Demon Disaster!",
+        rt + f"\n{user_member.first_name} was added as a Royal Blood!",
     )
 
     log_message = (
