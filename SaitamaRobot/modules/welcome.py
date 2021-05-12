@@ -199,7 +199,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Founding Titan Just Joined the group! Stay Alert!", reply_to_message_id=reply,
+                    "Founding Titan just joined the group!!!", reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -573,7 +573,7 @@ def left_member(update: Update, context: CallbackContext):
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you later at the Ackerman Clan Meetings!",
+                    "See you later at the Ackerman Clan!",
                     reply_to_message_id=reply,
                 )
                 return
