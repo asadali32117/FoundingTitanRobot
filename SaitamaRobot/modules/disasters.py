@@ -645,7 +645,7 @@ Visit @{SUPPORT_CHAT} for more information.
 SUDO_HANDLER = CommandHandler(("addsudo", "addtitanshifter"), addsudo)
 SUPPORT_HANDLER = CommandHandler(("addsupport", "addroyalblood"), addsupport)
 TIGER_HANDLER = CommandHandler(("addscout"), addtiger)
-WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addgarrison"), addwhitelist)
+WHITELIST_HANDLER = CommandHandler(("addgarison", "addwhitelist"), addwhitelist)
 UNSUDO_HANDLER = CommandHandler(("removesudo", "removetitanshifter"), removesudo)
 UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removeroyalblood"), removesupport)
 UNTIGER_HANDLER = CommandHandler(("removescout"), removetiger)
