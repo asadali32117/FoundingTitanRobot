@@ -238,14 +238,14 @@ def start(update: Update, context: CallbackContext):
                                 url="https://t.me/foundingtitanupdates/4",
                             ),
                             InlineKeyboardButton(
-                                text="📂 Source code",
-                                url="https://github.com/sasukeuchiha912/FoundingTitanRobot",
+                                text="⚡ Nexus Network™",
+                                url="https://t.me/nexusgroups/",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="⚡ Nexus Network",
-                                url="https://t.me/nexusgroups/",
+                                text="⚙️ Help and Commands ",
+                                url="https://t.me/FoundingTitanRobot?start=help",
                             ),
                         ],
                     ],
