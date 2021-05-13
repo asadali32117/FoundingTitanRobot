@@ -451,6 +451,10 @@ def adminlist(update, context):
         for admin in value:
             text += "\n<code> • </code>{}".format(admin)
         text += "\n"
+        
+     text += "\n🤖 Bots:"
+    for each_bot in bot_admin_list:
+        text += "\n<code> • </code>{}".format(each_bot)
 
     try:
         msg.edit_text(text, parse_mode=ParseMode.HTML)
