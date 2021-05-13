@@ -12,7 +12,7 @@ DEFAULT_GOODBYE = "Nice knowing ya!"
 DEFAULT_WELCOME_MESSAGES = [
     "{first} is here!",  # Discord welcome messages copied
     "Ready player {first}",
-    "Genos, {first} is here.",
+    "Armin, {first} is here.",
     "A wild {first} appeared.",
     "{first} came in like a Lion!",
     "{first} has joined your party.",
@@ -159,6 +159,13 @@ DEFAULT_WELCOME_MESSAGES = [
     "I'm back - {first}.",
     "Bond. {first} Bond.",
     "Come with me if you want to live",
+    "I Believe My Squad Will Be Victorious! ...",
+    "You Have The Freedom To Defend The World's Freedom And I Have The Freedom To Continue Moving Forward.",
+    "I'm The Same As You {first},I didnt had any choice",
+    "I'm Not Planning On Handing It Down To Any Of You",
+    "I'm Gonna Destroy Them! Every last one of those titans thats on this earth",
+    "Hey {first} If we kill all our enemies over there will we finally be free?",
+    "You're Not a Soldier {first}",
 ]
 DEFAULT_GOODBYE_MESSAGES = [
     "{first} will be missed.",
