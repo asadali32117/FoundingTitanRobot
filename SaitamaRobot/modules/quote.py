@@ -395,8 +395,6 @@ Do you know that you can convert a text message to a sticker? by doing /q to rep
 """
 __mod_name__ = "Quotly"
 
-QUOTE_HANDLER = DisableAbleCommandHandler(
-    "q", quote, pass_args=True, admin_ok=True
-)
+QUOTE_HANDLER = "q"
 
 dispatcher.add_handler(QUOTE_HANDLER)
