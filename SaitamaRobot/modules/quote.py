@@ -391,7 +391,7 @@ async def _(event):
     
     __help__ = """
    /q :- Please reply to a text message,
-Do you know that you can convert a text message to a sticker? by doing /q to replying a message
+Do you know that you can convert a text message to a sticker? by replying /q to a text message
 """
 __mod_name__ = "Quotly"
 
