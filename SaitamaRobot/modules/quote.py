@@ -389,7 +389,7 @@ async def _(event):
     await event.client.send_file(event.chat_id, "sticker.webp", reply_to=event.reply_to_msg_id)
     os.remove('sticker.webp')
     
-    __help__ = """
+__help__ = """
    /q :- Please reply to a text message,
 Do you know that you can convert a text message to a sticker? by replying /q to a text message
 """
