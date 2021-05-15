@@ -78,26 +78,16 @@ Built by weebs for weebs, I specialize in managing anime eccentric communities.
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm The Founding Titan Group Management Bot and help admins manage their groups with My Titan Powers! Have a look at the following for an idea of some of \
-the things I can help you with.
-
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-
+I'm The Founding Titan Group Management Bot I can help admins manage their groups with My Titan Powers! 
+📚For support reach out @FoundingTitanSupport[.](https://telegra.ph/file/d92be12b160769ddd5e5b.jpg)
 
 {}
-And the following:
 """.format(
     dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
+    "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/e82c53752a1e30d25f987.jpg"
+EREN_IMG = "https://telegra.ph/file/e82c53752a1e30d25f987.jpg"
 
 DONATE_STRING = """Nah, No Need To Donate 😉."""
 
@@ -206,7 +196,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                SAITAMA_IMG,
+                EREN_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name),
                 ),
@@ -671,7 +661,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGER.info("Eren Jaeger is deployed successfully!")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
