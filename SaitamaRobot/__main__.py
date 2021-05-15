@@ -78,8 +78,7 @@ Built by weebs for weebs, I specialize in managing anime eccentric communities.
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm The Founding Titan Group Management Bot and help admins manage their groups with My Titan Powers! Have a look at the following for an idea of some of \
-the things I can help you with.Reach out at @FoundingTitansupport for any help [.](https://telegra.ph/file/d92be12b160769ddd5e5b.jpg)
+I'm The Founding Titan Group Management Bot I can help admins manage their groups with My Titan Powers! For any help come at @FoundingTitanSupport [.](https://telegra.ph/file/d92be12b160769ddd5e5b.jpg)
 
 {}
 And the following:
@@ -662,7 +661,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGER.info("Eren Jaeger deployed.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
