@@ -79,7 +79,7 @@ Built by weebs for weebs, I specialize in managing anime eccentric communities.
 HELP_STRINGS = """
 Hey there! My name is *{}*.
 I'm The Founding Titan Group Management Bot and help admins manage their groups with My Titan Powers! Have a look at the following for an idea of some of \
-the things I can help you with.Reach out at @FoundingTitansupport for any help [.](https://telegra.ph/file/d92be12b160769ddd5e5b.jpg)
+the things I can help you with.Reach out at @FoundingTitansupport for any help [.] EREN_IMG
 
 {}
 And the following:
@@ -88,7 +88,8 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/e82c53752a1e30d25f987.jpg"
+EREN_IMG = "https://telegra.ph/file/e82c53752a1e30d25f987.jpg"
+ERENHELP_IMG = "https://telegra.ph/file/d92be12b160769ddd5e5b.jpg"
 
 DONATE_STRING = """Nah, No Need To Donate 😉."""
 
@@ -197,7 +198,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                SAITAMA_IMG,
+                EREN_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name),
                 ),
