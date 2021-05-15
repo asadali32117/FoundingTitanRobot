@@ -78,12 +78,13 @@ Built by weebs for weebs, I specialize in managing anime eccentric communities.
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm The Founding Titan Group Management Bot I can help admins manage their groups with My Titan Powers!\n 📚For support come at @FoundingTitanSupport [.](https://telegra.ph/file/d92be12b160769ddd5e5b.jpg)
+I'm The Founding Titan Group Management Bot I can help admins manage their groups with My Titan Powers! 
+📚For support reach out @FoundingTitanSupport [.](https://telegra.ph/file/d92be12b160769ddd5e5b.jpg)
 
 {}
 """.format(
     dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
+    "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.\n",
 )
 
 EREN_IMG = "https://telegra.ph/file/e82c53752a1e30d25f987.jpg"
