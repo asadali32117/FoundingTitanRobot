@@ -79,7 +79,7 @@ Built by weebs for weebs, I specialize in managing anime eccentric communities.
 HELP_STRINGS = """
 Hey there! My name is *{}*.
 I'm The Founding Titan Group Management Bot and help admins manage their groups with My Titan Powers! Have a look at the following for an idea of some of \
-the things I can help you with.Reach out at @FoundingTitansupport for any help [.] EREN_IMG
+the things I can help you with.Reach out at @FoundingTitansupport for any help [.](https://telegra.ph/file/d92be12b160769ddd5e5b.jpg)
 
 {}
 And the following:
@@ -89,7 +89,6 @@ And the following:
 )
 
 EREN_IMG = "https://telegra.ph/file/e82c53752a1e30d25f987.jpg"
-ERENHELP_IMG = "https://telegra.ph/file/d92be12b160769ddd5e5b.jpg"
 
 DONATE_STRING = """Nah, No Need To Donate 😉."""
 
