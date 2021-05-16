@@ -36,3 +36,4 @@ zalgo-text
 fontTools
 pyrogram
 nekos.py
+telegraph

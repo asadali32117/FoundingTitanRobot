@@ -479,7 +479,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust Heroes Association to set my bio.",
+                "Erm... yeah, I only trust Ackeramans to set my bio.",
             )
             return
 
@@ -525,7 +525,7 @@ __help__ = """
  • `/setme <text>`*:* will set your info
  • `/me`*:* will get your or another user's info.
 Examples:
- `/setme I am a wolf.`
+ `/setme I am a garrison.`
  `/me @username(defaults to yours if no user specified)`
 
 *Information others add on you:*
