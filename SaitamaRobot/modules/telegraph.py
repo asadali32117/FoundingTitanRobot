@@ -12,7 +12,7 @@ r = telegraph.create_account(short_name=babe)
 auth_url = r["auth_url"]
 
 
-@register(pattern="^/t(m|t) ?(.*)")
+@register(pattern="^/telegraph|t) ?(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -83,7 +83,7 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 __help__ = """
- - /tm : Get Telegraph Link Of Replied Media
+ - /telegraph : Get Telegraph Link Of Replied Media
  - /tt: Get Telegraph Link of Replied Text
 """
 
