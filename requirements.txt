@@ -37,3 +37,11 @@ fontTools
 pyrogram
 nekos.py
 telegraph
+tgCrypto>=1.2.2
+youtube_dl
+youtube_search
+pytube
+youtube-search-python
+pymongo
+motor
+dnspython
