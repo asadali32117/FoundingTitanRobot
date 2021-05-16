@@ -1,12 +1,12 @@
-from AsunaRobot.events import register
-from AsunaRobot import telethn as tbot
+from SaitamaRobot.events import register
+from SaitamaRobot import telethn as tbot
 TMP_DOWNLOAD_DIRECTORY = "tg-File/"
 from telethon import events
 import os
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
-babe = "AsunaRobot"
+babe = "SaitamaRobot"
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=babe)
 auth_url = r["auth_url"]
