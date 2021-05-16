@@ -87,7 +87,7 @@ I'm The Founding Titan Group Management Bot I can help admins manage their group
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.\n",
 )
 
-EREN_IMG = "https://telegra.ph/file/3f2f473fbd69877b3f9d9.mp4", parse_mode=ParseMode.MARKDOWN
+EREN_IMG = "https://telegra.ph/file/3f2f473fbd69877b3f9d9.mp4"
 
 DONATE_STRING = """Nah, No Need To Donate 😉."""
 
