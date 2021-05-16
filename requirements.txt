@@ -43,3 +43,4 @@ youtube_search
 pytube
 youtube-search-python
 pymongo
+motor
