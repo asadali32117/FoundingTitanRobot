@@ -42,3 +42,4 @@ youtube_dl
 youtube_search
 pytube
 youtube-search-python
+pymongo
