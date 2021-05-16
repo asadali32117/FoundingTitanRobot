@@ -144,4 +144,4 @@ async def progress_callback(current, total, reply):
             await reply.edit_text(text)
             prevtext = text
             last_edit_time = time.time()
-            progress_callback_data[message_identifier
+            progress_callback_data[message_identifier] = last_edit_time, prevtext, start_time
