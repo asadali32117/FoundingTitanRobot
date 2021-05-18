@@ -167,7 +167,7 @@
          "value": ""
        },
        "MONGO_DB_URI": {
-         "description": "Your Mongo Database Url, Required for some modules data",
+         "description": "Your Mongo Database Url, create it from https://cloud.mongodb.com/",
          "required": true,
          "value": ""
        }
