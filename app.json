@@ -165,9 +165,16 @@
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
          "required": false,
          "value": ""
-      },
+       },
+       "MONGO_DB_URI": {
+         "description": "Your Mongo Database Url, Required for some modules data",
+         "required": True,
+         "value": ""
+       }
       
+   }
+}
 
-}
-}
+ 
+
 
