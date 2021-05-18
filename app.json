@@ -168,7 +168,7 @@
        },
        "MONGO_DB_URI": {
          "description": "Your Mongo Database Url, Required for some modules data",
-         "required": True,
+         "required": "True"
          "value": ""
        }
       
