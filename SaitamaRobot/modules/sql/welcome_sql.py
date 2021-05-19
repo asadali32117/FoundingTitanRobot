@@ -53,7 +53,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "It's a bird! It's a plane! - Nope, its {first}!",
     "{first} Joined! - Ok.",  # Discord welcome messages end.
     "All Hail {first}!",
-    "Hi, {first}. Don't lurk, only Villans do that.",
+    "Hi, {first}. Don't lurk, only Titans do that.",
     "{first} has joined the battle bus.",
     "A new Challenger enters!",  # Tekken
     "Ok!",
@@ -61,12 +61,11 @@ DEFAULT_WELCOME_MESSAGES = [
     "Something just fell from the sky! - oh, its {first}.",
     "{first} Just teleported into the chat!",
     "Hi, {first}, show me your Hunter License!",  # Hunter Hunter
-    "I'm looking for Garo, oh wait nvm it's {first}.",  # One Punch man s2
+    "I'm looking for Levi, oh wait nvm it's {first}.",  # One Punch man s2
     "Welcome {first}, leaving is not an option!",
     "Run Forest! ..I mean...{first}.",
-    "{first} do 100 push-ups, 100 sit-ups, 100 squats, and 10km running EVERY SINGLE DAY!!!",  # One Punch ma
-    "Huh?\nDid someone with a disaster level just join?\nOh wait, it's just {first}.",  # One Punch ma
-    "Hey, {first}, ever heard the King Engine?",  # One Punch ma
+    "Huh?\nDid someone with a Disaster level just join?\nOh wait, it's just {first}.",  # One Punch ma
+    "Hey, {first}, ever heard the Titan Engine?",  # One Punch ma
     "Hey, {first}, empty your pockets.",
     "Hey, {first}!, are you strong?",
     "Call the Avengers! - {first} just joined the chat.",
@@ -166,6 +165,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "I'm Gonna Destroy Them! Every last one of those titans thats on this earth",
     "Hey {first} If we kill all our enemies over there will we finally be free?",
     "You're Not a Soldier {first}",
+    " Sasageyo, Sasageyo! {first}wa Sasageyo",
 ]
 DEFAULT_GOODBYE_MESSAGES = [
     "{first} will be missed.",
@@ -228,6 +228,7 @@ DEFAULT_GOODBYE_MESSAGES = [
     "The devil in disguise",
     "Go outside",
     "Always your head in the clouds",
+    " Give Up On Your Dreams And Die!",
 ]
 # Line 111 to 152 are references from https://bindingofisaac.fandom.com/wiki/Fortune_Telling_Machine
 
