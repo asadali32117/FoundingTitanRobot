@@ -337,8 +337,20 @@ dispatcher.add_handler(GDNIGHT_HANDLER)
 
 __mod_name__ = "Fun"
 __command_list__ = [
-    "runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide",
-    "table", "pat", "sanitize", "shout", "weebify"
+    "runs",
+    "slap",
+    "roll",
+    "toss",
+    "shrug",
+    "bluetext",
+    "rlg",
+    "decide",
+    "table",
+    "pat",
+    "sanitize",
+    "shout",
+    "weebify",
+    "meme"
 ]
 __handlers__ = [
     RUNS_HANDLER, SLAP_HANDLER, PAT_HANDLER, ROLL_HANDLER, TOSS_HANDLER,
