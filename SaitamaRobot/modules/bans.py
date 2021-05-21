@@ -73,14 +73,14 @@ def ban(update: Update, context: CallbackContext) -> str:
             )
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring an order from Akerman Clan to fight a Royal Blood.",
+                "Bring an order from Akermans to fight a Royal Blood.",
             )
         elif user_id in TIGERS:
             message.reply_text(
-                "Bring an order from Ackerman Clan to fight a Scout .",
+                "Bring an order from  Ackermans to fight a Scout .",
             )
         elif user_id in WOLVES:
-            message.reply_text("Garrisons abilities make them ban immune!")
+            message.reply_text("Garrison abilities make them ban immune!")
         else:
             message.reply_text("This user has immunity and cannot be banned.")
         return log_message
@@ -339,7 +339,7 @@ def unban(update: Update, context: CallbackContext) -> str:
         return log_message
 
     chat.unban_member(user_id)
-    message.reply_text("Yep, this user can join!")
+    message.reply_text("Yep, this user can join back again!")
 
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
