@@ -79,8 +79,7 @@ Built by weebs for weebs, I specialize in managing anime eccentric communities.
 
 HELP_STRINGS = """
 Hey there, I'm Eren Jaeger!
-I am an Anime themed group management bot.
-I can help admins manage their groups with My Titan Powers!
+I am an Anime themed group management bot, I can help admins manage their groups with My Titan Powers!
 📝 All commands can either be used with / or [!.](https://telegra.ph/file/f7df5cf66ed2162e13879.jpg)
 
 """.format(
