@@ -79,10 +79,16 @@ Built by weebs for weebs, I specialize in managing anime eccentric communities.
 
 HELP_STRINGS = """
 Hey there, I'm Eren Jaeger!
-To make me function, make sure that i have enough rights
-📝 All commands can either be used with / or [!.](https://telegra.ph/file/f7df5cf66ed2162e13879.jpg)
-For support and for reporting any bugs come at : @FoundingTitanSupport
+To make me functional, make sure that i have enough rights.
 
+Helpful commands:
+- /start: Starts me! You've probably already used this.
+- /help: Sends this message; I'll tell you more about myself!
+- /donate: Gives you info on how to support me and my creator.
+
+If you have any bugs or questions on how to use me then feel free to reach out: @FoundingTitanSupport.
+
+All commands can be used with the following: / !
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
@@ -90,7 +96,7 @@ For support and for reporting any bugs come at : @FoundingTitanSupport
 
 EREN_IMG = "https://telegra.ph/file/09408d522204680a7e7be.jpg"
 
-DONATE_STRING = """Nah, No Need To Donate 😉."""
+DONATE_STRING = """Plant a tree and give water to birds, that's your donation.."""
 
 IMPORTED = {}
 MIGRATEABLE = []
