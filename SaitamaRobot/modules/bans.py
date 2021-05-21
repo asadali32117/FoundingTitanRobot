@@ -73,11 +73,11 @@ def ban(update: Update, context: CallbackContext) -> str:
             )
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring an order from Akermans to fight a Royal Blood.",
+                "Bring an order from the Akermans to fight a Royal Blood.",
             )
         elif user_id in TIGERS:
             message.reply_text(
-                "Bring an order from  Ackermans to fight a Scout .",
+                "Bring an order from the Ackermans to fight a Scout .",
             )
         elif user_id in WOLVES:
             message.reply_text("Garrison abilities make them ban immune!")
