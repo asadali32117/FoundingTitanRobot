@@ -58,19 +58,19 @@ def warn(
 
     if user.id in TIGERS:
         if warner:
-            message.reply_text("Tigers cant be warned.")
+            message.reply_text("Scouts cant be warned.")
         else:
             message.reply_text(
-                "Tiger triggered an auto warn filter!\n I can't warn tigers but they should avoid abusing this.",
+                "Scout triggered an auto warn filter!\n I can't warn Scouts but they should avoid abusing this.",
             )
         return
 
     if user.id in WOLVES:
         if warner:
-            message.reply_text("Wolf disasters are warn immune.")
+            message.reply_text("Garrison disasters are warn immune.")
         else:
             message.reply_text(
-                "Wolf Disaster triggered an auto warn filter!\nI can't warn wolves but they should avoid abusing this.",
+                "Garrion Disaster triggered an auto warn filter!\nI can't warn wolves but they should avoid abusing this.",
             )
         return
 
@@ -441,13 +441,13 @@ def set_warn_strength(update: Update, context: CallbackContext):
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
                 f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-                f"Has enabled strong warns. Users will be seriously punched.(banned)"
+                f"Has enabled strong warns. Users will be seriously kicked.(banned)"
             )
 
         elif args[0].lower() in ("off", "no"):
             sql.set_warn_strength(chat.id, True)
             msg.reply_text(
-                "Too many warns will now result in a normal punch! Users will be able to join again after.",
+                "Too many warns will now result in a normal kick! Users will be able to join again after.",
             )
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
@@ -461,7 +461,7 @@ def set_warn_strength(update: Update, context: CallbackContext):
         limit, soft_warn = sql.get_warn_setting(chat.id)
         if soft_warn:
             msg.reply_text(
-                "Warns are currently set to *punch* users when they exceed the limits.",
+                "Warns are currently set to *kick* users when they exceed the limits.",
                 parse_mode=ParseMode.MARKDOWN,
             )
         else:
