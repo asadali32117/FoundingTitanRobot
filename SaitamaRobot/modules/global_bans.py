@@ -108,7 +108,7 @@ def gban(update: Update, context: CallbackContext):
         return
 
     if int(user_id) in TIGERS:
-        message.reply_text("That's a Tiger! They cannot be banned!")
+        message.reply_text("That's a Scout! They cannot be banned!")
         return
 
     if int(user_id) in WOLVES:
