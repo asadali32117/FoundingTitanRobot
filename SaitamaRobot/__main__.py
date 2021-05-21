@@ -78,7 +78,7 @@ Built by weebs for weebs, I specialize in managing anime eccentric communities.
 """
 
 HELP_STRINGS = """
-Hi {}, I'm Eren Jaeger!
+Hey there, I'm Eren Jaeger!
 I am an Anime themed group management bot.
 I can help admins manage their groups with My Titan Powers!
 
@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add me",
+                                text="✅ Add me",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username,
                                 ),
@@ -215,7 +215,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="☎️ Support",
+                                text="🗣️ Support",
                                 url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
                             InlineKeyboardButton(
@@ -229,8 +229,8 @@ def start(update: Update, context: CallbackContext):
                                 url="https://t.me/foundingtitanupdates/4",
                             ),
                             InlineKeyboardButton(
-                                text="⚡ Nexus Network™",
-                                url="https://t.me/nexusgroups/",
+                                text="🌐 Nexus Network™",
+                                url="https://t.me/Nexus_Network/",
                             ),
                         ],
                         [
