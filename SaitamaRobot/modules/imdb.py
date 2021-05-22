@@ -27,7 +27,7 @@ async def imdb(e):
         odds = soup.findAll("tr", "odd")
         mov_title = odds[0].findNext("td").findNext("td").text
         mov_link = (
-            "[Here](http://www.imdb.com/)" + odds[0].findNext("td").findNext("td").a["href"]
+            "http://www.imdb.com/" + odds[0].findNext("td").findNext("td").a["href"]
         )
         page1 = requests.get(mov_link)
         soup = bs4.BeautifulSoup(page1.content, "lxml")
