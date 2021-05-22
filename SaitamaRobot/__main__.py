@@ -79,7 +79,7 @@ Built by weebs for weebs, I specialize in managing anime eccentric communities.
 
 HELP_STRINGS = """
 Hey there, I'm Eren Jaeger!
-To make me functional, make sure that i have enough rights.
+To make me functional, make sure that i have enough rights in your group.
 
 Helpful commands:
 - /start: Starts me! You've probably already used this.
@@ -89,12 +89,13 @@ Helpful commands:
 If you have any bugs or questions on how to use me then feel free to reach out: @FoundingTitanSupport.
 
 All commands can be used with the following: / !
+All module lists:
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
 )
 
-EREN_IMG = "https://telegra.ph/file/09408d522204680a7e7be.jpg"
+EREN_IMG = "https://telegra.ph/file/06355bb1cd9d0c53d1171.jpg"
 
 DONATE_STRING = """Plant a tree and give water to birds, that's your donation.."""
 
@@ -213,7 +214,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ Add me",
+                                text="➕ Add Eren Jaeger to your group!",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username,
                                 ),
