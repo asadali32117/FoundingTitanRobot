@@ -46,3 +46,4 @@ pymongo
 motor
 dnspython
 redis
+gtts
