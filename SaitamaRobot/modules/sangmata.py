@@ -7,7 +7,7 @@ from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from SaitamaRobot.util import admin_cmd
 from SaitamaRobot.events import register
 
-@register(pattern"^/sg (.*)")
+@register(pattern="^/sg (.*)")
 async def _(event):
     if event.fwd_from:
         return 
@@ -40,7 +40,7 @@ async def _(event):
 
 
 
-@register(pattern"^/fakeemail (.*)")
+@register(pattern="^/fakeemail (.*)")
 async def _(event):
     if event.fwd_from:
         return 
@@ -74,7 +74,7 @@ async def _(event):
 
 
 
-@register(pattern"^/ub (.*)")
+@register(pattern="^/ub (.*)")
 async def _(event):
     if event.fwd_from:
         return 
