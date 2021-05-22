@@ -21,7 +21,7 @@ from SaitamaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
 from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
 from SaitamaRobot.modules.helper_funcs.extraction import extract_text
 from SaitamaRobot.modules.helper_funcs.filters import CustomFilters
-from SaitamaRobot.modules.helper_funcs.misc import build_keyboard
+from SaitamaRobot.modules.helper_funcs.misc import build_keyboard_parser
 from SaitamaRobot.modules.helper_funcs.msg_types import get_filter_type
 from SaitamaRobot.modules.helper_funcs.string_handling import (
     split_quotes,
