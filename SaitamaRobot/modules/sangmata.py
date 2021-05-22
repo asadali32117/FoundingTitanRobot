@@ -4,9 +4,10 @@ import datetime
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
-from SaitamaRobot.util. import admin_cmd
+from SaitamaRobot.util import admin_cmd
+from SaitamaRobot.events import register
 
-@borg.on(admin_cmd("sg ?(.*)"))
+@register(pattern"^/sg (.*)")
 async def _(event):
     if event.fwd_from:
         return 
@@ -39,7 +40,7 @@ async def _(event):
 
 
 
-@borg.on(admin_cmd("fakemail ?(.*)"))
+@register(pattern"^/fakeemail (.*)")
 async def _(event):
     if event.fwd_from:
         return 
@@ -73,7 +74,7 @@ async def _(event):
 
 
 
-@borg.on(admin_cmd("ub ?(.*)"))
+@register(pattern"^/ub (.*)")
 async def _(event):
     if event.fwd_from:
         return 
