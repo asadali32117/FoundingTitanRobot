@@ -89,7 +89,7 @@ Helpful commands:
 If you have any bugs or questions on how to use me then feel free to reach out: @FoundingTitanSupport.
 
 All commands can be used with the following: / !
-All module lists:
+List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
