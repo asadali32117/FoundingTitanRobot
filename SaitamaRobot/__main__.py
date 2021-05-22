@@ -4,7 +4,9 @@ import re
 from sys import argv
 from typing import Optional
 
-from SaitamaRobot import (
+from GabiBraunRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
+                          dispatcher, StartTime, telethn, updater, pgram)
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -213,7 +215,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ Add Me To Your Group",
+                                text="➕ Add me",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username,
                                 ),
