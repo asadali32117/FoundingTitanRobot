@@ -514,6 +514,12 @@ def __user_info__(user_id):
 
 
 __help__ = """
+*AFK:*
+When marked as AFK, any mentions will be replied to with a message to say you're not available!
+This also sends your last seen based on when you ran afk!
+ • `/afk`*:* <reason>: mark yourself as AFK (away from keyboard).
+ • `brb` <reason>: same as the afk command - but not a command.
+
 *ID:*
  • `/id`*:* get the current group id. If used by replying to a message, gets that user's id.
  • `/gifid`*:* reply to a gif to me to tell you its file ID.
