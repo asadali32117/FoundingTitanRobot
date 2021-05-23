@@ -1,6 +1,10 @@
 import html
 import random
 import time
+from pathlib import Path
+import glob
+import requests as r
+import urllib.request
 
 import SaitamaRobot.modules.fun_strings as fun_strings
 from SaitamaRobot import dispatcher
@@ -326,6 +330,19 @@ def weebify(update: Update, context: CallbackContext):
     else:
         message.reply_text(string)
 
+
+@run_async
+def meme(update: Update, context: CallbackContext):
+    msg = update.effective_message
+    meme = r.get("https://meme-api.herokuapp.com/gimme/Animemes/").json()
+    image = meme.get("url")
+    caption = meme.get("title")
+    if not image:
+        msg.reply_text("No URL was received from the API!")
+        return
+    msg.reply_photo(
+                photo=image, caption=caption)
+
 __help__ = """
  • `/runs`*:* reply a random string from an array of replies
  • `/slap`*:* slap a user, or get slapped if not a reply
@@ -341,6 +358,7 @@ __help__ = """
  • `/sanitize`*:* always use this before /pat or any contact
  • `/pat`*:* pats a user, or get patted
  • `/8ball`*:* predicts using 8ball method
+ • `/meme`*:* sends random anime memes
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
@@ -357,7 +375,9 @@ EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
+MEME_HANDLER = DisableAbleCommandHandler("meme", meme)
 
+dispatcher.add_handler(MEME_HANDLER)
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
 dispatcher.add_handler(SANITIZE_HANDLER)
@@ -389,6 +409,7 @@ __command_list__ = [
     "shout",
     "weebify",
     "8ball",
+    "meme",
 ]
 __handlers__ = [
     RUNS_HANDLER,
@@ -405,4 +426,5 @@ __handlers__ = [
     SHOUT_HANDLER,
     WEEBIFY_HANDLER,
     EIGHTBALL_HANDLER,
+    MEME_HANDLER,
 ]

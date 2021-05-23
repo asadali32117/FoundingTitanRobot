@@ -1,6 +1,7 @@
 import os
 import math
 import requests
+import cloudscraper
 import urllib.request as urllib
 from PIL import Image
 from html import escape
@@ -45,7 +46,9 @@ def cb_sticker(update: Update, context: CallbackContext):
     if len(split) == 1:
         msg.reply_text("Provide some name to search for pack.")
         return
-    text = requests.get(combot_stickers_url + split[1]).text
+
+    scraper = cloudscraper.create_scraper()
+    text = scraper.get(combot_stickers_url + split[1]).text
     soup = bs(text, "lxml")
     results = soup.find_all("a", {"class": "sticker-pack__btn"})
     titles = soup.find_all("div", "sticker-pack__title")
@@ -57,7 +60,6 @@ def cb_sticker(update: Update, context: CallbackContext):
         link = result["href"]
         reply += f"\n• [{title.get_text()}]({link})"
     msg.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
-
 
 def getsticker(update: Update, context: CallbackContext):
     bot = context.bot
@@ -71,7 +73,7 @@ def getsticker(update: Update, context: CallbackContext):
         os.remove("sticker.png")
     else:
         update.effective_message.reply_text(
-            "Please reply to a sticker for me to upload its PNG.",
+            "Please reply to a sticker for me to upload its PNG."
         )
 
 
@@ -425,10 +427,10 @@ def makepack_internal(
                     [
                         [
                             InlineKeyboardButton(
-                                text="Start", url=f"t.me/{context.bot.username}",
-                            ),
-                        ],
-                    ],
+                                text="Start", url=f"t.me/{context.bot.username}"
+                            )
+                        ]
+                    ]
                 ),
             )
         elif e.message == "Internal Server Error: created sticker set not found (500)":
@@ -450,10 +452,10 @@ def makepack_internal(
 
 
 __help__ = """
-• `/stickerid`*:* reply to a sticker to me to tell you its file ID.
-• `/getsticker`*:* reply to a sticker to me to upload its raw PNG file.
-• `/kang`*:* reply to a sticker to add it to your pack.
-• `/stickers`*:* Find stickers for given term on combot sticker catalogue
+ ❍ /stickerid*:* reply to a sticker to me to tell you its file ID.
+ ❍ /getsticker*:* reply to a sticker to me to upload its raw PNG file.
+ ❍ /kang*:* reply to a sticker to add it to your pack.
+ ❍ /stickers*:* Find stickers for given term on combot sticker catalogue
 """
 
 __mod_name__ = "Stickers"
