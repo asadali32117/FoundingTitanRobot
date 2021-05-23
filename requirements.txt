@@ -50,3 +50,4 @@ gtts
 cloudscraper
 wget
 tswift
+lyricsgenius
