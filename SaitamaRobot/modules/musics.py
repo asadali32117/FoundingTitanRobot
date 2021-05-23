@@ -12,7 +12,7 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from AsunaRobot.conf import get_str_key
+from SaitamaRobot.utils.conf import get_str_key
 from SaitamaRobot.utils.pluginhelp import get_text, progress
 from SaitamaRobot import pbot
 
