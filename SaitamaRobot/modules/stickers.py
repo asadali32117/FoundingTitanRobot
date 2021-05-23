@@ -12,8 +12,8 @@ from telegram import TelegramError, Update
 from telegram.ext import run_async, CallbackContext
 from telegram.utils.helpers import mention_html
 
-from GabiBraunRobot import dispatcher
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
+from SaitamaRobot import dispatcher
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
@@ -461,7 +461,7 @@ __help__ = """
 __mod_name__ = "Stickers"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
-KANG_HANDLER = DisableAbleCommandHandler("kang", kang, admin_ok=True)
+KANG_HANDLER = DisableAbleCommandHandler(["kang", "steal"] kang, admin_ok=True)
 STICKERS_HANDLER = DisableAbleCommandHandler("stickers", cb_sticker)
 
 dispatcher.add_handler(STICKERS_HANDLER)
