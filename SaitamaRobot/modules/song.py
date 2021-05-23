@@ -257,6 +257,7 @@ __help__ = """
   name. *
 
  - `/song` <songname artist(optional)>: uploads the song in it's best quality available
+ - `/saavn` <songname>: uploads the song from saavn.
  - `/video` <songname artist(optional)>: uploads the video song in it's best quality available
  - `/lyrics` <song>: returns the lyrics of that song.
 
