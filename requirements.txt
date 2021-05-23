@@ -49,3 +49,4 @@ redis
 gtts
 cloudscraper
 wget
+tswift
