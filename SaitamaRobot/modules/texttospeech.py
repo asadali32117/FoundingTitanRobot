@@ -44,3 +44,8 @@ dispatcher.add_handler(TTS_HANDLER)
 __handlers__ = [
     TTS_HANDLER
 ]
+
+__help__ = """
+ • `/texttospeech` <keyword>*:* Converts a text message to a voice message.
+
+__mod_name__ = "TextToSpeech"
