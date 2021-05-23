@@ -260,6 +260,7 @@ __help__ = """
  - `/saavn` <songname>: uploads the song from saavn.
  - `/video` <songname artist(optional)>: uploads the video song in it's best quality available
  - `/lyrics` <song>: returns the lyrics of that song.
+ - `/glyrics <artist - songname>`: Advanced lyrics searching.
 
 """
 
