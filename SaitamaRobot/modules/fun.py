@@ -1,6 +1,7 @@
 import html
 import random
 import time
+import requests as r
 
 import SaitamaRobot.modules.fun_strings as fun_strings
 from SaitamaRobot import dispatcher
@@ -330,7 +331,7 @@ def weebify(update: Update, context: CallbackContext):
 @run_async
 def meme(update: Update, context: CallbackContext):
     msg = update.effective_message
-    meme = r.get"https://meme-api.herokuapp.com/gimme/Animemes/".json()
+    meme = r.get("https://meme-api.herokuapp.com/gimme/Animemes/").json()
     image = meme.get("url")
     caption = meme.get("title")
     if not image:
