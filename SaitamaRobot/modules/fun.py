@@ -1,7 +1,10 @@
 import html
 import random
 import time
+from pathlib import Path
+import glob
 import requests as r
+import urllib.request
 
 import SaitamaRobot.modules.fun_strings as fun_strings
 from SaitamaRobot import dispatcher
