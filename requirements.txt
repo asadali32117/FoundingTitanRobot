@@ -48,3 +48,4 @@ dnspython
 redis
 gtts
 cloudscraper
+wget
