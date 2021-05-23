@@ -108,3 +108,9 @@ async def imdb(e):
         )
     except IndexError:
         await e.reply("Need Valid movie/show/anime name")
+
+__help__ = """
+  • `/imdb` <show/movie/anime> :- get ratings and info of any show/movie/anime from [IMDB](https://m.imdb.com/)
+"""
+__mod_name__ = "IMDB"
+
