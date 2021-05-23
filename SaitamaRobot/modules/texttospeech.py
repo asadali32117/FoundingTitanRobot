@@ -35,8 +35,9 @@ def tts(update, context):
         tts = gTTS(reply, lang)
         tts.save("k.mp3")
     with open("k.mp3", "rb") as speech:
-        update.message.reply_voice(speech, quote=False)
-       
+        update.message.reply_voice(speech, quote=False)     
+
+
 TTS_HANDLER = DisableAbleCommandHandler("texttospeech", tts)
 
 dispatcher.add_handler(TTS_HANDLER)
@@ -44,3 +45,7 @@ dispatcher.add_handler(TTS_HANDLER)
 __handlers__ = [
     TTS_HANDLER
 ]
+__help__ = """
+  • /texttospeech <keyword> :- Converts a text message to a voice message.
+"""
+__mod_name__ = "TextToSpeech"
