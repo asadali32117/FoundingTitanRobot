@@ -6,8 +6,8 @@ from SaitamaRobot.utils.filter_groups import karma_positive_group, karma_negativ
 from pyrogram import filters
 
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍|nice|well done)$"
-regex_downvote = r"^(\-|\-\-|\-1|👎|noob|bruh)$"
+regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍|nice|noice|well done)$"
+regex_downvote = r"^(\-|\-\-|\-1|👎|noob|Noob|stfu)$"
 
 
 @app.on_message(
@@ -118,5 +118,5 @@ __mod_name__ = "Karma"
 __help__ = """
 *Upvote* - Use upvote keywords like "+", "+1", "thanks", etc. to upvote a message.
 *Downvote* - Use downvote keywords like "-", "-1", etc. to downvote a message.
-•`/karma`:- reply to a user to check that user's reputation.
-•`/karma`:- send without replying to any message to check reputation list of top 10 users."""
+•`/karma`:- reply to a user to check that user's karma points.
+•`/karma`:- send without replying to any message to check karma point list of top 10 users."""
