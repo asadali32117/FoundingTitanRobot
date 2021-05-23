@@ -51,3 +51,4 @@ cloudscraper
 wget
 tswift
 lyricsgenius
+envparse
