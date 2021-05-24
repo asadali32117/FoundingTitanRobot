@@ -68,10 +68,10 @@ def no_longer_afk(update: Update, context: CallbackContext):
                 "We thought we lost you {}",
                 "Welcome Back {} now pay $100 to Get freedom or get banned!",
                 "{} Good job waking up now get ready for your classes!",
-                "Hey,{}! Why weren't you online for such a long time?",
+                "Hey {}! Why weren't you online for such a long time?",
                 "{} why did you came back?",
-                "Ah shit, here we go again",
-                "Oh no! not you again",
+                "{} Is now back online!",
+                "OwO, Welcome back {}",
                 "Welcome to hell again {}",
                 "Mission failed successfully {}",
             ]
