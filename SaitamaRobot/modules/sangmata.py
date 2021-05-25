@@ -3,7 +3,7 @@ from telethon.tl import functions, types
 
 from SaitamaRobot.events import register as Eren
 from SaitamaRobot import telethn as tbot
-from SaitamaRobot.services.telethonuserbot import ubot
+from SaitamaRobot.utils.telethonub import ubot
 
 
 async def is_register_admin(chat, user):
