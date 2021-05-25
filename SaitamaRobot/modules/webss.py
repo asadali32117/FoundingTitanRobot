@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from SaitamaRobot import app
+from SaitamaRobot import pbot as app
 from SaitamaRobot.utils.errors import capture_err
 
 __mod_name__ = "WebSS"
