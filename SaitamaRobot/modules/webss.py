@@ -4,7 +4,7 @@ from SaitamaRobot import pbot as app
 from SaitamaRobot.utils.errors import capture_err
 
 __mod_name__ = "WebSS"
-__help__ = "/webss | .webss [URL] - Take A Screenshot Of A Webpage"
+__help__ = "`/webss` [URL] - Take A Screenshot Of A Webpage"
 
 
 @app.on_message(filters.command("webss"))
