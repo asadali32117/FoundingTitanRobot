@@ -86,7 +86,7 @@ Helpful commands:
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
 
-If you have any bugs or questions on how to use me then feel free to reach out: @FoundingTitanSupport.
+If you want to report bugs or have any questions on how to use me then feel free to reach out: @FoundingTitanSupport.
 
 All commands can be used with the following: / !
 List of all the Modules:
