@@ -184,8 +184,8 @@ async def captcha_state(_, message):
     else:
         await message.reply_text(usage)
 
-mod_name = "Karma"
-help = """
+__mod_name__ = "Karma"
+__help__ = """
 *Upvote* - Use upvote keywords like "+", "+1", "thanks", etc. to upvote a message.
 *Downvote* - Use downvote keywords like "-", "-1", etc. to downvote a message.
 •/karma:- reply to a user to check that user's karma points.
