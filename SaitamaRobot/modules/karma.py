@@ -1,6 +1,6 @@
-from SaitamaRobot import pbot as app
+from SaitamaRobot import pbot as EREN
 from SaitamaRobot.utils.errors import capture_err
-from SaitamaRobot.utils.dbfunc import (update_karma, get_karma, get_karmas,
+from SaitamaRobot.utils.dbfunction import (update_karma, get_karma, get_karmas,
                                    int_to_alpha, alpha_to_int)
 from SaitamaRobot.utils.filter_groups import karma_positive_group, karma_negative_group
 from pyrogram import filters
@@ -10,7 +10,7 @@ regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|go
 regex_downvote = r"^(\-|\-\-|\-1|👎)$"
 
 
-@app.on_message(
+@EREN.on_message(
     filters.text
     & filters.group
     & filters.incoming
@@ -43,7 +43,7 @@ async def upvote(_, message):
     )
 
 
-@app.on_message(
+@EREN.on_message(
     filters.text
     & filters.group
     & filters.incoming
@@ -76,7 +76,7 @@ async def downvote(_, message):
     )
 
 
-@app.on_message(filters.command("karma") & filters.group)
+@EREN.on_message(filters.command("karma") & filters.group)
 @capture_err
 async def karma(_, message):
     chat_id = message.chat.id
