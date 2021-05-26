@@ -3,9 +3,9 @@ from functools import wraps
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 from pyrogram.types import Message
 
-from SaitamaRobot import DRAGONS, app
+from SaitamaRobot import DRAGONS
 from SaitamaRobot.utils.pluginhelp import member_permissions
-
+from SaitamaRobot import pbot as app
 
 async def authorised(func, subFunc2, client, message, *args, **kwargs):
     chatID = message.chat.id
