@@ -2,7 +2,7 @@ from SaitamaRobot import db
 from typing import Dict, List, Union
 
 coupledb = db.couple
-karmadb = db.karma
+karmadb = db.karma1
 
 
 async def is_karma_on(chat_id: int) -> bool:
