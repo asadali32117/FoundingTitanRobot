@@ -223,3 +223,4 @@ __help__ = """
 •`/karma`:- reply to a user to check that user's karma points.
 •`/karma`:- send without replying to any message to check karma point list of top 10
 •`/karma` [ON/OFF] :- Enable/Disable karma in your group.
+"""
