@@ -30,14 +30,6 @@ from SaitamaRobot.utils.dbfunctions import (alpha_to_int, get_karma, get_karmas,
                                    karma_on, update_karma)
 from SaitamaRobot.utils.filter_groups import karma_negative_group, karma_positive_group
 
-__MODULE__ = "Karma"
-__HELP__ = """[UPVOTE] - Use upvote keywords like "+", "+1", "thanks" etc to upvote a message.
-[DOWNVOTE] - Use downvote keywords like "-", "-1", etc to downvote a message.
-/karma_toggle [ENABLE|DISABLE] - Enable or Disable Karma System In Your Chat.
-Reply to a message with /karma to check a user's karma
-Send /karma without replying to any message to chek karma list of top 10 users"""
-
-
 regex_upvote = (
     r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍)$"
 )
@@ -192,3 +184,11 @@ async def captcha_state(_, message):
     else:
         await message.reply_text(usage)
 
+mod_name = "Karma"
+help = """
+*Upvote* - Use upvote keywords like "+", "+1", "thanks", etc. to upvote a message.
+*Downvote* - Use downvote keywords like "-", "-1", etc. to downvote a message.
+•/karma:- reply to a user to check that user's karma points.
+•/karma:- send without replying to any message to check karma point list of top 10
+•/karma_toggle [ENABLE/DISABLE] :- Enable/Disable karma in your group.
+"""
