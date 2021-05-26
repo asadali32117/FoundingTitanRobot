@@ -52,3 +52,6 @@ wget
 tswift
 lyricsgenius
 envparse
+aiohttp[speedups]
+cryptg
+cryptography
