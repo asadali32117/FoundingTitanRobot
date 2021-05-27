@@ -23,4 +23,4 @@ Eren is a simple bot for making your group management easier and cool.
 * Goes To Sawada And All Other SaitamaRobot Helpers
 
 ## Deploy 
-<a href="https://heroku.com/deploy?template=https://github.com/sasukeuchiha912/FoundingTitanRobot"> <img src="https://img.shields.io/badge/-Deploy%20To%20Heroku-blueviolet" /> </a>
+<a href="https://heroku.com/deploy?template=https://github.com/sasukeuchiha912/FoundingTitanRobot"(https://www.herokucdn.com/deploy/button.svg)
