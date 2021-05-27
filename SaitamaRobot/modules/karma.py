@@ -6,8 +6,8 @@ from SaitamaRobot.utils.filter_groups import karma_positive_group, karma_negativ
 from pyrogram import filters
 
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍)$"
-regex_downvote = r"^(\-|\-\-|\-1|👎)$"
+regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍|nice|noice|piro)$"
+regex_downvote = r"^(\-|\-\-|\-1|👎|noob|Noob|gross|fuck off)$"
 
 
 @EREN.on_message(
@@ -96,7 +96,7 @@ async def karma(_, message):
             if limit > 9:
                 break
             try:
-                user_name = (await app.get_users(int(user_idd))).username
+                user_name = (await EREN.get_users(int(user_idd))).username
             except Exception:
                 continue
             msg += f"{user_name} : `{karma_count}`\n"
