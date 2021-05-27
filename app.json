@@ -165,10 +165,36 @@
          "description": "Your Mongo Database Url, create it from https://cloud.mongodb.com/",
          "required": true,
          "value": ""
-       }
+       }, 
+       "REDIS_URI": {
+         "description": "Redis Url create one from redislabs.com.",
+         "required": true,
+         "value": ""
+       }, 
+       "APP_ID": {
+         "description": "API ID of 2nd telegram account if you dont have two accounts then use the same accounts API ID, but i recommend using 2nd accounts API ID",
+         "required": true,
+         "value": ""
+      }, 
+      "APP_HASH": {
+         "description": " API HASH of 2nd telegram account if you dont two accounts then use the same accounts API HASH, but i recommend using 2nd accounts API HASH.",
+         "required": true,
+         "value": ""
+       }, 
+       "STRING_SESSION": {
+         "description": "Telethon String Session, create it from https://repl.it/@SpEcHiDe/GenerateStringSession .",
+         "required": true,
+         "value": ""
+      }
       
    }
-}
+} 
+
+     
+
+      
+   
+
 
  
 
